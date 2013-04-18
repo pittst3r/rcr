@@ -8,7 +8,7 @@
     = csrf_meta_tags
     
   %body
-    
+    = render "/refinery/site_bar"
     #top-menu
       .bound
         %a.logo{ href: "/" } Re-Create Recreation
@@ -21,3 +21,6 @@
     
     #content.bound
       = yield
+    
+    %footer
+      %p.bound &copy; #{DateTime.now.strftime("%Y")} Re-Create Recreation LLC
