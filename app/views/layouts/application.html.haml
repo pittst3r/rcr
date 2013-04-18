@@ -1,0 +1,23 @@
+!!!5
+%html
+  %head
+    %title Re-Create Recreation
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic", media: "all"
+    = stylesheet_link_tag 'application', media: "all"
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    
+  %body
+    
+    #top-menu
+      .bound
+        %a.logo{ href: "/" } Re-Create Recreation
+        %ul
+          %li= link_to "Services", "#"
+          %li= link_to "News & Events", "#"
+          %li= link_to "Qualifications", "#"
+          %li= link_to "About", "#"
+          %li= link_to "Contact", "#"
+    
+    #content.bound
+      = yield
