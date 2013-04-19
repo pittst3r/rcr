@@ -22,4 +22,6 @@
     = raw @page.content_for(:feature_2)
   .feature-box
     = raw @page.content_for(:feature_3)
-  
+
+%h2 News & Events
+= render partial: "/refinery/blog/categories/post_listing", locals: { posts: Refinery::Blog::Category.where(slug: "news-events").first.posts.live }

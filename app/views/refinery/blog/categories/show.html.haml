@@ -1,0 +1,6 @@
+%h1= @category.title
+
+- if @posts.any?
+  = render partial: "post_listing", locals: { posts: @posts }
+  
+  = will_paginate @posts

@@ -1,0 +1,5 @@
+%h1.post-title= @post.title
+
+= render partial: "post_meta", locals: { post: @post }
+
+= @post.body.html_safe

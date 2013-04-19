@@ -1,0 +1,6 @@
+%section.post-listing
+  - posts.each do |post|
+    %article
+      %h2= link_to post.title, refinery.blog_post_path(post)
+      = render partial: "/refinery/blog/posts/post_meta", locals: { post: post }
+      = raw post.body

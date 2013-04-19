@@ -13,11 +13,8 @@
       .bound
         %a.logo{ href: "/" } Re-Create Recreation
         %ul
-          %li= link_to "Services", "#"
-          %li= link_to "News & Events", "#"
-          %li= link_to "Qualifications", "#"
-          %li= link_to "About", "#"
-          %li= link_to "Contact", "#"
+          - menu_pages.each do |page|
+            %li= link_to page[:title], page[:path]
     
     #content.bound
       = yield
