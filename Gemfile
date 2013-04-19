@@ -7,11 +7,11 @@ group :development, :test do
 end
 
 group :assets do
-  gem 'sass-rails'
-  gem 'haml-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'haml-rails'
+gem 'sass-rails'
 gem 'jquery-rails', '~> 2.0.0'
 
 
