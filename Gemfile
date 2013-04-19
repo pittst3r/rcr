@@ -2,17 +2,15 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
-group :development, :test do
-  gem 'sqlite3'
-end
+gem 'sqlite3'
+gem 'haml-rails'
+gem 'sass-rails'
+gem 'jquery-rails', '~> 2.0.0'
 
 group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'haml-rails'
-gem 'sass-rails'
-gem 'jquery-rails', '~> 2.0.0'
 
 
 # Refinery CMS
