@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   gem 'sqlite3'
 end
@@ -10,7 +14,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'activerecord-sqlite3-adapter'
 gem 'haml-rails'
 gem 'sass-rails'
 gem 'jquery-rails', '~> 2.0.0'
