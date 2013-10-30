@@ -15,10 +15,8 @@
         %ul
           - menu_pages.each do |page|
             %li= link_to page[:title], page[:path]
-        #social-links
-          %ul
-            %li
-              %a.facebook{ href: "https://www.facebook.com/pages/Re-create-Recreation-LLC/144553265660014" } Re-Create Recreation on Facebook
+          %li.social-link
+            %a.facebook{ href: "https://www.facebook.com/pages/Re-create-Recreation-LLC/144553265660014" } Re-Create Recreation on Facebook
     
     #content.bound
       = yield
