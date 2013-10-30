@@ -3,9 +3,7 @@
   %section
     #hero
       .copy
-        %h1 My name is Tabitha and I’m a Recreation Therapist.
         %p When you take the <em>dis</em> out of <em>dis</em>abilities you are left with abilities. That’s exactly what we strive to help you and your loved ones to do; by teaching and developing their true abilities, because life doesn’t have to be disabling.
-        %p.signature Tabitha Pitts, CTRS, QMHP
     #card
       %ul
         %li Certified Therapeutic Recreation Specialist (CTRS) through the National Council for Therapeutic Recreation (NCTRC)
@@ -23,5 +21,6 @@
   .feature-box
     = raw @page.content_for(:feature_3)
 
-%h2 News & Events
-= render partial: "/refinery/blog/categories/post_listing", locals: { posts: Refinery::Blog::Category.where(slug: "news-events").first.posts.live }
+%section.post-listing.home
+  %h2 News & Events
+  = render partial: "/refinery/blog/categories/post_listing", locals: { posts: Refinery::Blog::Category.where(slug: "news-events").first.posts.live }

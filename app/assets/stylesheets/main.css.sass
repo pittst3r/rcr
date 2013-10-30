@@ -128,12 +128,20 @@ em.new
     border: none
     h2
       margin: 0 0 5px 0
+      font-size: 16px
+      font-weight: 200
+      text-transform: uppercase
+    h3
+      margin: 0 0 5px 0
+      font-size: 18px
       font-weight: 700
     article
       margin: 20px 0
-      padding: 45px
+      padding: 40px
       border: 2px solid $light-gray
       border-radius: $radius
+    &.home
+      margin-top: 40px
   h1.post-title
     margin: 0
 
@@ -143,6 +151,7 @@ em.new
     ul
       list-style: none
     #hero
+      position: relative
       float: left
       width: 700px
       height: 270px
@@ -150,11 +159,11 @@ em.new
       border-radius: $radius
       @include clearfix
       .copy
-        position: relative
+        position: absolute
         z-index: 1
-        top: 15px
+        bottom: 20px
         width: 300px
-        padding: 15px 0
+        padding: 16px 20px
         color: white
         background: rgba(0, 0, 0, .8)
         border-radius: 0 $radius $radius 0
@@ -162,24 +171,11 @@ em.new
           content: ""
           display: block
           clear: both
-        h1
-          margin: 0 15px 10px
-          padding: 0
-          font-size: 18px
-          line-height: 1.2em
-          font-weight: 300
-          color: white
-          border: none
         p
-          margin: 10px 15px
-          font-size: 14px
+          margin: 0
+          font-size: 16px
           font-weight: 300
-          opacity: .9
-          &.signature
-            margin-bottom: 0
-            font-weight: 200
-            font-style: italic
-            opacity: .6
+          line-height: 1.4em
     #card
       float: right
       position: relative
@@ -215,7 +211,7 @@ em.new
           border-radius: 100%
           background: url(/assets/portrait.jpg)
           background-size: 120px auto
-          background-position: -25px -5px
+          background-position: -11px -18px
 
   .feature-box
     position: relative

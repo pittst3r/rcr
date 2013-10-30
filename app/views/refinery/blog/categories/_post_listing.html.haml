@@ -1,5 +1,5 @@
 %section.post-listing
   - posts.each do |post|
     %article
-      %h2= link_to post.title, refinery.blog_post_path(post)
+      %h3= link_to post.title, refinery.blog_post_path(post)
       = raw post.body
